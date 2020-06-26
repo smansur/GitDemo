@@ -1,0 +1,683 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-25T07:56:39.411Z",
+        "line": 4,
+        "name": "Vendor Login to Drees team",
+        "description": "",
+        "id": "verifying-builder-and-vendor-messaging-apis;vendor-login-to-drees-team",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4176000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Login Payload",
+            "match": {
+              "location": "stepDefinitions.StepDefinitionForDrees.login_Payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5361000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User calls \"DreesTeamLoginAPI\" with \"POST\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DreesTeamLoginAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitionForDrees.user_calls_with_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "API call is successful with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitionForDrees.api_call_is_successful_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2326000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Response validation and capture authtoken",
+            "match": {
+              "location": "stepDefinitions.StepDefinitionForDrees.response_validation_and_capture_authtoken()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Messages"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-25T07:56:51.562Z",
+        "line": 11,
+        "name": "Fetching Builder ID to filter the activities",
+        "description": "",
+        "id": "verifying-builder-and-vendor-messaging-apis;fetching-builder-id-to-filter-the-activities",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 32000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Fetch builder payload",
+            "match": {
+              "location": "stepDefinitions.StepDefinitionForDrees.fetch_payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4000000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User calls \"FetchingBuilderNameAPI\" with \"GET\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"FetchingBuilderNameAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitionForDrees.user_calls_with_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "API call is successful with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitionForDrees.api_call_is_successful_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 328000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Response validation and capture builderID",
+            "match": {
+              "location": "stepDefinitions.StepDefinitionForDrees.response_validation_and_capture_builderID()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Messages"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-25T07:56:55.938Z",
+        "line": 18,
+        "name": "Fetching the activity ID to send a message",
+        "description": "",
+        "id": "verifying-builder-and-vendor-messaging-apis;fetching-the-activity-id-to-send-a-message",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Fetch activity payload",
+            "match": {
+              "location": "stepDefinitions.StepDefinitionForDrees.fetch_activity_payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3323000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User calls \"FetchingActivityIdAPI\" with \"GET\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"FetchingActivityIdAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitionForDrees.user_calls_with_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "API call is successful with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitionForDrees.api_call_is_successful_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2273000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Response validation and capture activityID",
+            "match": {
+              "location": "stepDefinitions.StepDefinitionForDrees.response_validation_and_capture_activityID()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Messages"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-25T07:57:01.558Z",
+        "line": 25,
+        "name": "Vendor Sending message to builder",
+        "description": "",
+        "id": "verifying-builder-and-vendor-messaging-apis;vendor-sending-message-to-builder",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 397000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Vendor Sending message Payload",
+            "match": {
+              "location": "stepDefinitions.StepDefinitionForDrees.vendor_Sending_message_Payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2639000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User calls \"VendorSendingMessageAPI\" with \"POST\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"VendorSendingMessageAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitionForDrees.user_calls_with_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "API call is successful with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitionForDrees.api_call_is_successful_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 48000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "verify the response \"body\" matches to \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"body\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"true\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitionForDrees.verify_the_response_matches_to(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Messages"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-25T07:57:04.649Z",
+        "line": 32,
+        "name": "Verifying Drees Build Login",
+        "description": "",
+        "id": "verifying-builder-and-vendor-messaging-apis;verifying-drees-build-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Drees Login Payload",
+            "match": {
+              "location": "stepDefinitions.StepDefinitionForDrees.drees_Login_Payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3356000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User calls \"DreesBuildAuthenticateAPI\" with \"GET\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DreesBuildAuthenticateAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitionForDrees.user_calls_with_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "API call is successful with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitionForDrees.api_call_is_successful_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 76000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "verify the response and capture userkey",
+            "match": {
+              "location": "stepDefinitions.StepDefinitionForDrees.verify_the_response_and_capture_userkey()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Messages"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-25T07:57:08.101Z",
+        "line": 38,
+        "name": "Drees Build Fetching Unread Message Count",
+        "description": "",
+        "id": "verifying-builder-and-vendor-messaging-apis;drees-build-fetching-unread-message-count",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "DBuild Unread Messages Count Payload",
+            "match": {
+              "location": "stepDefinitions.StepDefinitionForDrees.dbuild_Unread_Messages_Count_Payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3029000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User calls \"DreesBuildUnreadMessageCountAPI\" with \"GET\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DreesBuildUnreadMessageCountAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitionForDrees.user_calls_with_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "API call is successful with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitionForDrees.api_call_is_successful_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "verify the response and capture unread message count",
+            "match": {
+              "location": "stepDefinitions.StepDefinitionForDrees.verify_the_response_and_capture_unread_message_count()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Messages"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-25T07:57:11.194Z",
+        "line": 45,
+        "name": "Fetching The Read Messages To Find The Unread Message Thread ID",
+        "description": "",
+        "id": "verifying-builder-and-vendor-messaging-apis;fetching-the-read-messages-to-find-the-unread-message-thread-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Unread Messages ThreadID Payload",
+            "match": {
+              "location": "stepDefinitions.StepDefinitionForDrees.unread_Messages_ThreadID_Payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3041000000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "User calls \"DreesBuildReadMessagesAPI\" with \"GET\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DreesBuildReadMessagesAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitionForDrees.user_calls_with_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "API call is successful with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitionForDrees.api_call_is_successful_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1505000000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "verify the response and capture unread message thread ID",
+            "match": {
+              "location": "stepDefinitions.StepDefinitionForDrees.verify_the_response_and_capture_unread_message_thread_ID()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Messages"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-25T07:57:15.756Z",
+        "line": 52,
+        "name": "Builder Marking the vendor message as read",
+        "description": "",
+        "id": "verifying-builder-and-vendor-messaging-apis;builder-marking-the-vendor-message-as-read",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "Builder Message Reading Payload",
+            "match": {
+              "location": "stepDefinitions.StepDefinitionForDrees.builder_Message_Reading_Payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2488000000,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "User calls \"DreesBuildMessageMarkAsReadAPI\" with \"POST\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DreesBuildMessageMarkAsReadAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitionForDrees.user_calls_with_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "API call is successful with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitionForDrees.api_call_is_successful_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [false] but found [true]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:136)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:751)\r\n\tat org.testng.Assert.assertEquals(Assert.java:761)\r\n\tat stepDefinitions.StepDefinitionForDrees.verify_the_response_status_matches_to_true(StepDefinitionForDrees.java:228)\r\n\tat ✽.verify the response status matches to true(file:///C:/Users/USER/Desktop/Selenium/CostrategixPresentation/src/test/java/featureFiles/Builder-VendorMessaging.feature:56)\r\n",
+              "duration": 3858000000,
+              "status": "failed"
+            },
+            "line": 56,
+            "name": "verify the response status matches to true",
+            "match": {
+              "location": "stepDefinitions.StepDefinitionForDrees.verify_the_response_status_matches_to_true()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Messages"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Verifying Builder And Vendor Messaging APIs",
+    "description": "",
+    "id": "verifying-builder-and-vendor-messaging-apis",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/featureFiles/Builder-VendorMessaging.feature",
+    "tags": []
+  }
+]

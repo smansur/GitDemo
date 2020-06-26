@@ -1,0 +1,1326 @@
+Request method:	GET
+Request URI:	https://publicstage.dreesteam.com/authenticate/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				authorization=QU5hZ2VuZHJhOmFzaHJpdGhAY29zdHJhdGVnaXg=
+				Sec-Fetch-Site=same-site
+				authorization=Sec-Fetch-Mode
+				Sec-Fetch-Dest=empty
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 25 Jun 2020 07:57:08 GMT
+Server: Apache-Coyote/1.1
+Access-Control-Allow-Credentials: false
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 1000
+Access-Control-Allow-Headers: x-requested-with, Content-Type, origin, authorization, accept, client-security-token
+Content-Type: application/json
+X-Varnish: 1230614
+Age: 0
+Via: 1.1 varnish (Varnish/5.2)
+X-Cache: MISS
+X-DEBUG: DEBUG
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+{
+    "user": {
+        "key": "a3d0392e98fa7a9ceb9724a5092b70b683fd0de3",
+        "emp_id": 560,
+        "username": "ANagendra",
+        "applications": {
+            "application": [
+                {
+                    "name": "DREESBRIDGE",
+                    "roles": {
+                        "role": {
+                            "name": "USER",
+                            "status": 1,
+                            "cognizance_help": "<font color=\"white\">No Cog<br>"
+                        }
+                    }
+                },
+                {
+                    "name": "JOBDOCS",
+                    "roles": {
+                        "role": {
+                            "name": "USER",
+                            "status": 1,
+                            "cognizance_help": "No Cog"
+                        }
+                    }
+                },
+                {
+                    "name": "C2SADMIN",
+                    "roles": {
+                        "role": {
+                            "name": "USER",
+                            "status": 1,
+                            "cognizance": "139,103,104,105,107,109,110,121,123,124,125,129,140,142,143,210,214,220,221,230,231,302,352,372,936",
+                            "cognizance_help": "<font color=\"white\">Division IDs separated by commas.<br><br>  \r\n\r\nAdministrator is allowed to create Section defaults for any Contract to Start job that will appear in the DreesBuild Scheduling system.  This includes defining the email address of the recipient of bids submitted by Vendors, assigning Vendors to obtain job information prior to job scheduling, and identifying the timing of advanced Vendor notice.  </font>"
+                        }
+                    }
+                },
+                {
+                    "name": "MARKETDOCS",
+                    "roles": {
+                        "role": {
+                            "name": "USER",
+                            "status": 1
+                        }
+                    }
+                },
+                {
+                    "name": "DREESBUILD",
+                    "roles": {
+                        "role": [
+                            {
+                                "name": "VEN_ADMIN",
+                                "status": 1,
+                                "cognizance": "1,2,3,4,5,6,7,8",
+                                "cognizance_help": "<font color = \"white\"> No Cognizance Required <br><br>\r\n\r\n</font>"
+                            },
+                            {
+                                "name": "C2S_MANAGE",
+                                "status": 1,
+                                "cognizance": "-1,1,2,3,4",
+                                "cognizance_help": "<font color=\"white\"> Task Numbers:<br><br>\r\n<b>-1 = Super Edit User </b><br><br>\r\n1 = Edit schedules<br><br>\r\n2 = Assign Vendors<br><br>\r\n3 = Apply Templates<br><br>\r\n4 = Edit Resources<br><br>\r\n5 = Halt Jobs<br><br>\r\n6 = Delete Jobs<br><br>\r\n7 = Change Job Status<br><br>\r\n<br><br>\r\n\r\n</font>"
+                            },
+                            {
+                                "name": "C2S_ADMIN",
+                                "status": 1,
+                                "cognizance": "-1,1",
+                                "cognizance_help": "<font color=\"white\"> No Cognizance Required.  <br><br>\r\n\r\n</font>\r\n"
+                            },
+                            {
+                                "name": "VEN_SUPER",
+                                "status": 1,
+                                "cognizance": "1,2,3,4,5,6,7,8",
+                                "cognizance_help": "The role gives the user the ability to view and edit Vendor passwords for DreesTeam.  No Cog"
+                            },
+                            {
+                                "name": "JOB_MANAGE",
+                                "status": 1,
+                                "cognizance": "1,2,3,4,5,6,7,8,9",
+                                "cognizance_help": "<font color=\"white\">\r\nDreesBuild 2.0<br><br>\r\nDivision Administrator (Base Roles)<br><br>\r\n - SCH_ADMIN = 5<br><br>\r\n - JOB_MANAGE = 2,3,4,6<br><br><br>\r\n\r\nRegional Administrator (Base Roles)<br><br>\r\n- SCH_ADMIN = 4,5<br><br>\r\n- JOB_MANAGE = 5,7<br><br><br>\r\n\r\n Task Numbers:<br><br>\r\n<b>-1 = Super Edit User </b><br><br>\r\n1 = Edit schedules<br><br>\r\n2 = Assign Vendors<br><br>\r\n3 = Apply Templates<br><br>\r\n4 = Edit Resources<br><br>\r\n5 = Halt Jobs<br><br>\r\n6 = Delete Jobs<br><br>\r\n7 = Change Job Status<br><br>\r\n8 = Manager Tools and Edit Halt Notes<br><br>\r\n9 = Legal Holds<br><br>\r\n<br><br>\r\n\r\n</font>\r\n\r\n"
+                            },
+                            {
+                                "name": "Notify",
+                                "status": 1,
+                                "cognizance_help": "<font color=\"white\"> Division ID user will be notified when a Vendor has been changed.<br><br>\r\n\r\n<font>"
+                            },
+                            {
+                                "name": "SCH_ADMIN",
+                                "status": 1,
+                                "cognizance": "1,2,3,4,5,6,7,8",
+                                "cognizance_help": "<font color=\"white\">\r\n\r\nDreesBuild 2.0<br><br>\r\nDivision Administrator (Base Roles)<br><br>\r\n - SCH_ADMIN = 5<br><br>\r\n - JOB_MANAGE = 2,3,4,6<br><br><br>\r\n\r\nRegional Administrator (Base Roles)<br><br>\r\n- SCH_ADMIN = 4,5<br><br>\r\n- JOB_MANAGE = 5,7<br><br><br>\r\n\r\n\r\n Page Numbers for Schedule Admin Section:<br><br>\r\n\r\n1 = Schedule Activities<br><br>\r\n2 = Late Reason Codes<br><br>\r\n3 = Halt Reason Codes<br><br>\r\n4 = Schedule Templates<br><br>\r\n5 = Schedule Template Maintenance<br><br>\r\n6 = Vendor Assignment Categories<br><br>\r\n\r\n<br><br>\r\n\r\n</font>"
+                            },
+                            {
+                                "name": "USER",
+                                "status": 1,
+                                "cognizance": "103,104,107,121,123,124,125,129,139,140,142,143,220,221,230,231,302,352,372",
+                                "cognizance_help": "<font color=\"white\"> Division ID user has access.  Cognizance Required <br><br>\r\n\r\n\r\n</font> \r\n"
+                            },
+                            {
+                                "name": "C2CPM",
+                                "status": 1,
+                                "cognizance_help": "<font color=\"white\"> No Cog required <br> This role allows the user to use the new style job edit screen  <br><br>\r\n\r\n</font>\r\n"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "CUSTOMERCARE",
+                    "roles": {
+                        "role": [
+                            {
+                                "name": "REP",
+                                "status": 1,
+                                "cognizance": "103,104,107,121,123,124,125,129,139,140,142,143,220,221,230,231,302,352,372"
+                            },
+                            {
+                                "name": "ADMIN",
+                                "status": 1,
+                                "cognizance": "1,2,3,4,5,6,7,8,9,10,11,12,13,14",
+                                "cognizance_help": "<font color=\"white\"> This role give the user the ability to delete Customer Care work orders form the system.  This should only be given to users approved by Jack H <br><br> No Cogniznace <br><br>\r\n"
+                            },
+                            {
+                                "name": "PAGEEDIT",
+                                "status": 1,
+                                "cognizance": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+                                "cognizance_help": "<font color=\"white\"> Task Numbers:<br><br>\r\n<b</b><br><br>\r\n1 = View, edit, and execute a Customer Search<br>\r\n2 = View, edit, and add Recurring Codes<br><br>\r\n3 = View and edit Quick Card Vendors<br><br>\r\n4 = View, edit and add Customer Service Representatives<br><br>\r\n5 = WQI/HO Phone Power Entry Job Lookup<br><br>\r\n6 = Warranty Work Order Lookup<br><br>\r\n7 = Print Work Orders<br><br>\r\n8 = Warranty Work Order Edit<br><br>\r\n9 = View My Incomplete Warranty Work Orders<br><br>\r\n10 = View and edit Division Warranty Manager<br><br>\r\n11 = View and edit Master Log<br><br>\r\n12 = View and edit WQI/HO<br><br>\r\n13 = View and edit Profile<br><br>\r\n14 = Delete Line Item<br><br>\r\n15 = Enter Completion Date<br><br>\r\n16 = Division Customer Care Email Address\r\n<br><br>\r\n\r\n</font>"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "FPO",
+                    "roles": {
+                        "role": [
+                            {
+                                "name": "FPO_BUILDER",
+                                "status": 1,
+                                "cognizance": "139,103,104,105,107,109,110,121,123,124,125,129,140,142,143,210,214,220,221,230,231,302,352,372,936"
+                            },
+                            {
+                                "name": "FPO_REQUEST",
+                                "status": 1,
+                                "cognizance": "139,103,104,105,107,109,110,121,123,124,125,129,140,142,143,210,214,220,221,230,231,302,352,372,936",
+                                "cognizance_help": "Cognizance - By Divisions"
+                            },
+                            {
+                                "name": "PAGEEDIT",
+                                "status": 1,
+                                "cognizance": "1,2,3,4,5,6,7,8",
+                                "cognizance_help": "Page Numbers 1 - 8"
+                            },
+                            {
+                                "name": "FPO_SUPEREDIT",
+                                "status": 1,
+                                "cognizance_help": "Cognizance - By Division"
+                            },
+                            {
+                                "name": "FPO_CORRECTIVE",
+                                "status": 1,
+                                "cognizance": "23,24,25,26,27,28,29,30,31,32",
+                                "cognizance_help": "Corrective action group number as generated from this program."
+                            },
+                            {
+                                "name": "USER",
+                                "status": 1,
+                                "cognizance": "139,103,104,105,107,109,110,121,123,124,125,129,140,142,143,210,214,220,221,230,231,302,352,372,936",
+                                "cognizance_help": "Cognizance - By Division"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "DREAMBUILDER",
+                    "roles": {
+                        "role": [
+                            {
+                                "name": "DEVELOPER",
+                                "status": 1
+                            },
+                            {
+                                "name": "MARKETING",
+                                "status": 1,
+                                "cognizance_help": "N/A"
+                            },
+                            {
+                                "name": "MARKET_MANAGER",
+                                "status": 1,
+                                "cognizance_help": "N/A"
+                            },
+                            {
+                                "name": "OPERATIONS",
+                                "status": 1,
+                                "cognizance_help": "N/A"
+                            },
+                            {
+                                "name": "USER",
+                                "status": 1,
+                                "cognizance_help": "N/A"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}
+Request method:	GET
+Request URI:	https://publicstage.dreesteam.com/dbuild/messages/v2/unread/count
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				authorization=QU5hZ2VuZHJhOmEzZDAzOTJlOThmYTdhOWNlYjk3MjRhNTA5MmI3MGI2ODNmZDBkZTM=
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 25 Jun 2020 07:57:11 GMT
+Server: Apache-Coyote/1.1
+Access-Control-Allow-Credentials: false
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 1000
+Access-Control-Allow-Headers: x-requested-with, Content-Type, origin, authorization, accept, client-security-token
+Content-Type: application/json
+X-Varnish: 1230617
+Age: 0
+Via: 1.1 varnish (Varnish/5.2)
+X-Cache: MISS
+X-DEBUG: DEBUG
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Length: 51
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "count": {
+        "unReadMessagesCount": 1
+    }
+}
+Request method:	GET
+Request URI:	https://publicstage.dreesteam.com/dbuild/messages/v2/read
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				authorization=QU5hZ2VuZHJhOmEzZDAzOTJlOThmYTdhOWNlYjk3MjRhNTA5MmI3MGI2ODNmZDBkZTM=
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 25 Jun 2020 07:57:14 GMT
+Server: Apache-Coyote/1.1
+Access-Control-Allow-Credentials: false
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 1000
+Access-Control-Allow-Headers: x-requested-with, Content-Type, origin, authorization, accept, client-security-token
+Content-Type: application/json;charset=UTF-8
+X-Varnish: 501737
+Age: 0
+Via: 1.1 varnish (Varnish/5.2)
+X-Cache: MISS
+X-DEBUG: DEBUG
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+{
+    "messagesresponse": {
+        "messages": [
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-24T02:54:00.709-04:00",
+                "receiveDate": 1592981654180,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528426,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592981640709,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-24T03:08:36.951-04:00",
+                "receiveDate": 1592982530857,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528427,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592982516951,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "JP FLOORING SYSTEMS",
+                "toName": "JP FLOORING SYSTEMS",
+                "fromName": "Ashrith Nagendra",
+                "toId": 10777,
+                "fromId": 560,
+                "jobNumber": "GPL-0171-00",
+                "jobAddress": "7179 Redridge Drive, Cleves, OH  45002",
+                "activityName": "Install Carpet",
+                "createdDate": "2019-12-05T06:51:22.395-05:00",
+                "receiveDate": 1575546682395,
+                "messageContent": "new test msg after fix  on dec 5",
+                "threadId": 528361,
+                "activityJobId": 7904014,
+                "threadOrder": 0,
+                "createdTimeStamp": 1575546682395,
+                "messageCategory": "READ",
+                "sentToType": "VENDOR",
+                "messageStatus": "NEW"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-23T12:09:16.734-04:00",
+                "receiveDate": 1592928567927,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528424,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592928556734,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "JP FLOORING SYSTEMS",
+                "toName": "JP FLOORING SYSTEMS",
+                "fromName": "Ashrith Nagendra",
+                "toId": 10777,
+                "fromId": 560,
+                "jobNumber": "GPL-0171-00",
+                "jobAddress": "7179 Redridge Drive, Cleves, OH  45002",
+                "activityName": "Install Carpet",
+                "createdDate": "2019-12-05T06:51:22.661-05:00",
+                "receiveDate": 1575546682661,
+                "messageContent": "new test msg after fix  on dec 5",
+                "threadId": 528362,
+                "activityJobId": 7904014,
+                "threadOrder": 0,
+                "createdTimeStamp": 1575546682661,
+                "messageCategory": "READ",
+                "sentToType": "VENDOR",
+                "messageStatus": "NEW",
+                "message": [
+                    {
+                        "vendorName": "JP FLOORING SYSTEMS",
+                        "toName": "JP FLOORING SYSTEMS",
+                        "fromName": "Ashrith Nagendra",
+                        "toId": 10777,
+                        "fromId": 560,
+                        "jobNumber": "GPL-0171-00",
+                        "jobAddress": "7179 Redridge Drive, Cleves, OH  45002",
+                        "activityName": "Install Carpet",
+                        "createdDate": "2020-02-14T04:43:15.473-05:00",
+                        "receiveDate": 0,
+                        "sentDate": 1581673395473,
+                        "message": "testing",
+                        "threadId": 528362,
+                        "activityJobId": 7904014,
+                        "threadOrder": 3,
+                        "messageStatus": "NEW",
+                        "sentToType": "VENDOR",
+                        "createdTimeStamp": 1581673395473
+                    },
+                    {
+                        "vendorName": "JP FLOORING SYSTEMS",
+                        "toName": "JP FLOORING SYSTEMS",
+                        "fromName": "Ashrith Nagendra",
+                        "toId": 10777,
+                        "fromId": 560,
+                        "jobNumber": "GPL-0171-00",
+                        "jobAddress": "7179 Redridge Drive, Cleves, OH  45002",
+                        "activityName": "Install Carpet",
+                        "createdDate": "2019-12-05T06:54:16.730-05:00",
+                        "receiveDate": 0,
+                        "sentDate": 1575546856730,
+                        "message": "second replyy",
+                        "threadId": 528362,
+                        "activityJobId": 7904014,
+                        "threadOrder": 2,
+                        "messageStatus": "NEW",
+                        "sentToType": "VENDOR",
+                        "createdTimeStamp": 1575546856730
+                    },
+                    {
+                        "vendorName": "JP FLOORING SYSTEMS",
+                        "toName": "JP FLOORING SYSTEMS",
+                        "fromName": "Ashrith Nagendra",
+                        "toId": 10777,
+                        "fromId": 560,
+                        "jobNumber": "GPL-0171-00",
+                        "jobAddress": "7179 Redridge Drive, Cleves, OH  45002",
+                        "activityName": "Install Carpet",
+                        "createdDate": "2019-12-05T06:52:04.173-05:00",
+                        "receiveDate": 0,
+                        "sentDate": 1575546724173,
+                        "message": "reply msg for new thread",
+                        "threadId": 528362,
+                        "activityJobId": 7904014,
+                        "threadOrder": 1,
+                        "messageStatus": "NEW",
+                        "sentToType": "VENDOR",
+                        "createdTimeStamp": 1575546724173
+                    }
+                ]
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-24T02:01:12.449-04:00",
+                "receiveDate": 1592978488009,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528425,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592978472449,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-24T03:37:36.769-04:00",
+                "receiveDate": 1592984271098,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528430,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592984256769,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-24T03:40:21.114-04:00",
+                "receiveDate": 1592984434416,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528431,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592984421114,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-24T03:23:48.949-04:00",
+                "receiveDate": 1592983443861,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528428,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592983428949,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-24T03:30:12.326-04:00",
+                "receiveDate": 1592983827141,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528429,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592983812326,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-23T10:55:11.805-04:00",
+                "receiveDate": 1592924335536,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528418,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592924111805,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-23T10:58:41.042-04:00",
+                "receiveDate": 1592924800402,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528419,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592924321042,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-23T09:29:55.424-04:00",
+                "receiveDate": 1592919006446,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528416,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592918995424,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-23T10:00:03.741-04:00",
+                "receiveDate": 1592920814675,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528417,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592920803741,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-23T11:16:37.349-04:00",
+                "receiveDate": 1592925408054,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528422,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592925397349,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-23T12:02:31.473-04:00",
+                "receiveDate": 1592928161969,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528423,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592928151473,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-23T11:06:29.953-04:00",
+                "receiveDate": 1592981182153,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528420,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592924789953,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-23T11:08:42.834-04:00",
+                "receiveDate": 1592982031954,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528421,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592924922834,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-25T03:57:05.022-04:00",
+                "receiveDate": 0,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528435,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1593071825022,
+                "messageCategory": "UNREAD",
+                "sentToType": "BUILDER",
+                "messageStatus": "NEW"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-25T03:55:07.395-04:00",
+                "receiveDate": 1593071720944,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528434,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1593071707395,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-25T03:27:38.500-04:00",
+                "receiveDate": 1593070073023,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528433,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1593070058500,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-25T03:19:03.218-04:00",
+                "receiveDate": 1593069564808,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528432,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1593069543218,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "TMGC-0306S-00",
+                "jobAddress": "SHELL UNIT, Loveland, OH  45140",
+                "activityName": "Deliver Trusses",
+                "createdDate": "2020-04-14T09:00:37.313-04:00",
+                "receiveDate": 1586869380574,
+                "messageContent": "Hi..Sending message to Ashrith",
+                "threadId": 528396,
+                "activityJobId": 8059918,
+                "threadOrder": 0,
+                "createdTimeStamp": 1586869237313,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ",
+                "message": {
+                    "vendorName": "NISBET BROWER LUMBER",
+                    "toName": "NISBET BROWER LUMBER",
+                    "fromName": "Ashrith Nagendra",
+                    "toId": 2218,
+                    "fromId": 560,
+                    "jobNumber": "TMGC-0306S-00",
+                    "jobAddress": "SHELL UNIT, Loveland, OH  45140",
+                    "activityName": "Deliver Trusses",
+                    "createdDate": "2020-04-14T09:03:26.158-04:00",
+                    "receiveDate": 1586869530875,
+                    "sentDate": 1586869406158,
+                    "message": "Ok..",
+                    "threadId": 528396,
+                    "activityJobId": 8059918,
+                    "threadOrder": 1,
+                    "messageStatus": "READ",
+                    "sentToType": "VENDOR",
+                    "createdTimeStamp": 1586869406158
+                }
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-15T08:52:16.986-04:00",
+                "receiveDate": 1592234215371,
+                "messageContent": "Starting a thread with a new message",
+                "threadId": 528399,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592225536986,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ",
+                "message": {
+                    "vendorName": "NISBET BROWER LUMBER",
+                    "toName": "Ashrith Nagendra",
+                    "fromName": "NISBET BROWER LUMBER",
+                    "toId": 560,
+                    "fromId": 2218,
+                    "jobNumber": "ELFT-0139-00",
+                    "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                    "activityName": "Frame House",
+                    "createdDate": "2020-06-15T08:52:17.033-04:00",
+                    "receiveDate": 1592234215371,
+                    "sentDate": 1592225537033,
+                    "message": "Starting a thread with a new message",
+                    "threadId": 528399,
+                    "activityJobId": 8058571,
+                    "threadOrder": 0,
+                    "messageStatus": "READ",
+                    "sentToType": "BUILDER",
+                    "createdTimeStamp": 1592225537033
+                }
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-22T13:33:03.887-04:00",
+                "receiveDate": 1592848925144,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528409,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592847183887,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-22T13:29:42.222-04:00",
+                "receiveDate": 1592848927732,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528408,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592846982222,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-22T14:05:51.659-04:00",
+                "receiveDate": 1592849161041,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528411,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592849151659,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-22T13:37:43.185-04:00",
+                "receiveDate": 1592848923609,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528410,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592847463185,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-22T14:15:49.115-04:00",
+                "receiveDate": 1592849757933,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528413,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592849749115,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-22T14:07:12.442-04:00",
+                "receiveDate": 1592849243055,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528412,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592849232442,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-23T08:11:42.232-04:00",
+                "receiveDate": 1592914313440,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528415,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592914302232,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-23T08:09:12.004-04:00",
+                "receiveDate": 1592914172039,
+                "messageContent": "Rest Assured API Automation Framework Sents message to builder",
+                "threadId": 528414,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592914152004,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-16T01:19:10.647-04:00",
+                "receiveDate": 1592284942434,
+                "messageContent": "Starting new message from rest assured6",
+                "threadId": 528401,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592284750647,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ",
+                "message": [
+                    {
+                        "vendorName": "NISBET BROWER LUMBER",
+                        "toName": "Ashrith Nagendra",
+                        "fromName": "NISBET BROWER LUMBER",
+                        "toId": 560,
+                        "fromId": 2218,
+                        "jobNumber": "ELFT-0139-00",
+                        "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                        "activityName": "Frame House",
+                        "createdDate": "2020-06-16T01:57:20.220-04:00",
+                        "receiveDate": 1592287271393,
+                        "sentDate": 1592287040220,
+                        "message": "hello",
+                        "threadId": 528401,
+                        "activityJobId": 8058571,
+                        "threadOrder": 2,
+                        "messageStatus": "READ",
+                        "sentToType": "BUILDER",
+                        "createdTimeStamp": 1592287040220
+                    },
+                    {
+                        "vendorName": "NISBET BROWER LUMBER",
+                        "toName": "Ashrith Nagendra",
+                        "fromName": "NISBET BROWER LUMBER",
+                        "toId": 560,
+                        "fromId": 2218,
+                        "jobNumber": "ELFT-0139-00",
+                        "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                        "activityName": "Frame House",
+                        "createdDate": "2020-06-16T01:42:41.187-04:00",
+                        "receiveDate": 1592287005468,
+                        "sentDate": 1592286161187,
+                        "message": "Sent",
+                        "threadId": 528401,
+                        "activityJobId": 8058571,
+                        "threadOrder": 1,
+                        "messageStatus": "READ",
+                        "sentToType": "BUILDER",
+                        "createdTimeStamp": 1592286161187
+                    }
+                ]
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-15T12:18:54.474-04:00",
+                "receiveDate": 1592284575378,
+                "messageContent": "Starting a thread with a new message",
+                "threadId": 528400,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592237934474,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-16T02:43:20.866-04:00",
+                "receiveDate": 1592291809060,
+                "messageContent": "Sending new message from rest assured5",
+                "threadId": 528403,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592289800866,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Install Exterior Doors",
+                "createdDate": "2020-06-16T02:04:24.015-04:00",
+                "receiveDate": 1592287907267,
+                "messageContent": "Hi....hhhe",
+                "threadId": 528402,
+                "activityJobId": 8058584,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592287464015,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ",
+                "message": {
+                    "vendorName": "NISBET BROWER LUMBER",
+                    "toName": "Ashrith Nagendra",
+                    "fromName": "NISBET BROWER LUMBER",
+                    "toId": 560,
+                    "fromId": 2218,
+                    "jobNumber": "ELFT-0139-00",
+                    "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                    "activityName": "Install Exterior Doors",
+                    "createdDate": "2020-06-16T02:10:07.806-04:00",
+                    "receiveDate": 1592287907267,
+                    "sentDate": 1592287807806,
+                    "message": "hi",
+                    "threadId": 528402,
+                    "activityJobId": 8058584,
+                    "threadOrder": 1,
+                    "messageStatus": "READ",
+                    "sentToType": "BUILDER",
+                    "createdTimeStamp": 1592287807806
+                }
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-16T03:33:38.336-04:00",
+                "receiveDate": 1592292828911,
+                "messageContent": "Sending new message from rest assured0",
+                "threadId": 528405,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592292818336,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-16T03:12:51.707-04:00",
+                "receiveDate": 1592291810884,
+                "messageContent": "Sending new message from rest assured1",
+                "threadId": 528404,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592291571707,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-22T11:45:13.216-04:00",
+                "receiveDate": 1592848930059,
+                "messageContent": "Starting a thread with a new message",
+                "threadId": 528407,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592840713216,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            },
+            {
+                "vendorName": "NISBET BROWER LUMBER",
+                "toName": "Ashrith Nagendra",
+                "fromName": "NISBET BROWER LUMBER",
+                "toId": 560,
+                "fromId": 2218,
+                "jobNumber": "ELFT-0139-00",
+                "jobAddress": "9369 Gardenside Lane, Loveland, OH  45140",
+                "activityName": "Frame House",
+                "createdDate": "2020-06-16T03:44:47.900-04:00",
+                "receiveDate": 1592293499319,
+                "messageContent": "Sending new message from rest assured1",
+                "threadId": 528406,
+                "activityJobId": 8058571,
+                "threadOrder": 0,
+                "createdTimeStamp": 1592293487900,
+                "messageCategory": "READ",
+                "sentToType": "BUILDER",
+                "messageStatus": "READ"
+            }
+        ]
+    }
+}
+Request method:	POST
+Request URI:	https://publicstage.dreesteam.com/dbuild/messages/v2/updateStatus/?threadId=528435&threadOrder=0
+Proxy:			<none>
+Request params:	<none>
+Query params:	threadId=528435
+				threadOrder=0
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				authorization=QU5hZ2VuZHJhOmEzZDAzOTJlOThmYTdhOWNlYjk3MjRhNTA5MmI3MGI2ODNmZDBkZTM=
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 25 Jun 2020 07:57:18 GMT
+Server: Apache-Coyote/1.1
+Access-Control-Allow-Credentials: false
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Access-Control-Max-Age: 1000
+Access-Control-Allow-Headers: x-requested-with, Content-Type, origin, authorization, accept, client-security-token
+Content-Type: application/json
+X-Varnish: 501740
+Age: 0
+Via: 1.1 varnish (Varnish/5.2)
+X-Cache: MISS
+X-DEBUG: DEBUG
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+{
+    "updateStatusResponse": {
+        "status": true
+    }
+}

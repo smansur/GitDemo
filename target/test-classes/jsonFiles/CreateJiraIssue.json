@@ -1,0 +1,43 @@
+{
+  "update": {},
+
+  "fields": {
+    "summary": "Test Case name 13",
+    "issuetype": {
+      "id": "10005"
+    },
+    "components": [
+      {
+        "id": "10000"
+      }
+    ],
+    "project": {
+      "id": "10000"
+    },
+    "description": {
+      "type": "doc",
+      "version": 1,
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Failed in automation framework",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "reporter": {
+      "id": "5edc89544833d00aae18bf07"
+    },
+    "labels": [
+      "APIAutomation"
+    ],
+    "assignee": {
+      "id": "5edcd2af22b87d0aafac39b6"
+    }
+    
+  }
+}
